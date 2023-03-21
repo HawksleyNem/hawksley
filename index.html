@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Hawksley Mouquet~</title>
+    </head>
+    <body>
+        <section id="app">
+            <header id="home">
+                <section class="container">
+                    <nav>
+                        <div class="nav-small">
+                            <a href="" class="nav-item"
+                                ><img src="" alt=""
+                            /></a>
+                        </div>
+                        <div class="nav-sections">
+                            <a href="#home" class="enabled">Accueil</a>
+                            <a href="#profile" class="disabled">Profil</a>
+                            <a href="#skills" class="disabled">Compétences</a>
+                            <a href="#career-path" class="disabled">Parcours</a>
+                            <a href="#portfolio" class="disabled">Portfolio</a>
+                        </div>
+                        <div class="nav-small nav-button">
+                            <a href="">
+                                <button class="dl-button">
+                                    Télécharger CV
+                                </button>
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="header-body">
+                        <div class="header-info">
+                            <h1>Hawksley Mouquet</h1>
+                            <p class="header-desc">
+                                Étudiant en 1ère année de Bachelor Web Design UI
+                                - UX & Développement Web à La Manu - Ecole
+                                Supérieure des Métiers du Numérique
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </header>
+
+            <main>
+                <section class="container">
+                    <!-- <section id="profile">
+                <h2>Profil</h2>
+            </section>
+
+            <section id="skills">
+                <h2>Compétences</h2>
+            </section>
+
+            <section id="career-path">
+                <h2>Parcours</h2>
+            </section> -->
+
+                    <section id="portfolio">
+                        <h2 class="section-title">Portfolio</h2>
+                        <p class="section-desc">
+                            Retrouvez ci-dessous mes créations
+                        </p>
+
+                        <div class="portfolio-grid">
+                            <portfolio-item
+                                class="les-vieilles-charettes"
+                                :pi_title="'Les Vieilles Charettes'"
+                                :pi_desc="`Les Vieilles Charrettes est un projet Wordpress personnel de début d'année, que nous avons réalisé en 2 mois, avec d'abord la conception du wireframe, le maquettage, et enfin la création du site internet avec Wordpress.`"
+                            ></portfolio-item>
+                            <portfolio-item
+                                class="maison-levasseur"
+                                :pi_title="'Maison Levasseur'"
+                                :pi_desc="`Maison Levasseur est un projet de groupe de début d'année qui a duré un peu plus d'un mois. Nous devions proposer une maquette d'un site à une vraie cliente qui tenait sa boulangerie avec son conjoint.`"
+                            ></portfolio-item>
+                            <portfolio-item
+                                class="instant-gaming"
+                                :pi_title="'Instant Gaming'"
+                                :pi_desc="`Le projet Instant Gaming a duré 3 jours. Il consistait à réaliser la maquette version mobile du site Instant Gaming, en groupe, afin de pouvoir coder notre propre version du site par la suite, de manière responsive.`"
+                            ></portfolio-item>
+                            <portfolio-item
+                                class="musee"
+                                :pi_title="'Musée du Petit Palais'"
+                                :pi_desc="`Le Musée du Petit Palais est un sujet que nous avons eu à la première période des partiels. Nous devions réaliser en 3 heures une nouvelle maquette pour le site du Musée du Petit Palais d'Avignon, afin de lui donner une nouvelle identité et attirer un plus large public.`"
+                            ></portfolio-item>
+                            <portfolio-item
+                                class="popchill"
+                                :pi_title="'Popchill'"
+                                :pi_desc="`Popchill est le nom que nous avons donné à notre site lors d'un projet de groupe, qui a duré 3 jours, qui consistait à reproduire un site de streaming à l'aide d'une API. Nous avons donc conçu la maquette dans un premier temps, puis par la suite nous avons codé le site en HTML & CSS, et nous avons implémenté l'API grâce à VueJS.`"
+                            ></portfolio-item>
+                            <portfolio-item
+                                class="trouvailles"
+                                :pi_title="'Les Trouvailles de Thaïs'"
+                                :pi_desc="`Les Trouvailles de Thaïs est le nom du site que nous avons réalisé pour une vraie cliente qui tient sa boutique à Amiens. C'est un projet de groupe qui a duré 3 mois, avec adaptation de la charte graphique pour le web, la conception du wireframe, de la maquette, et enfin du site Wordpress, avec la gestion des plugins nécessaires aux besoins de la cliente.`"
+                            ></portfolio-item>
+                        </div>
+                    </section>
+                </section>
+            </main>
+
+            <footer>
+                <section class="container">
+                    <section class="social-medias">
+                        <hr class="footer-hr" />
+                        <a
+                            href="https://github.com/HawksleyNem"
+                            target="_blank"
+                            class="footer-icon-container"
+                        >
+                            <img
+                                src="./assets/img/github.png"
+                                alt="Github"
+                                class="footer-icon"
+                            />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/hawksley-mouquet-254566235/"
+                            target="_blank"
+                            class="footer-icon-container"
+                        >
+                            <img
+                                src="./assets/img/linkedin.png"
+                                alt="LinkedIn"
+                                class="footer-icon"
+                            />
+                        </a>
+                        <hr class="footer-hr" />
+                    </section>
+                </section>
+            </footer>
+        </section>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="./assets/js/script.js"></script>
+</html>

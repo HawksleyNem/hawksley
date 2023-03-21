@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url("../fonts/Manrope/Manrope-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: rgb(5,10,39);
+    color: #ffffff;
+    font-family: 'Manrope';
+    font-weight: 500;
+}
+
+.container {
+    width: 90%;
+}
+
+
+/* --------------------------------------------- HEADER --------------------------------------------- */
+
+header {
+    height: 100vh;
+    padding-top: 4vh;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(5,10,39,1) 100%), url("../img/1123013.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-small {
+    width: 20vw
+}
+
+.nav-sections {
+    width: 45vw;
+    text-align: center;
+}
+
+.nav-button {
+    text-align: end;
+}
+
+nav a {
+    margin-inline: 0.7vw;
+    font-size: 0.8em;
+}
+
+nav a:visited {
+    color: #ffffff;
+}
+
+nav a.enabled {
+    color: #ffffff;
+}
+
+nav a.disabled {
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.dl-button {
+    cursor: pointer;
+    background-color: rgb(52,149,73);
+    border-style: none;
+    padding-inline: 1.5vw;
+    padding-block: 2.5vh;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.dl-button:hover {
+    background-color: rgb(44, 128, 62);
+    color: #e1e1e1;
+}
+
+/* Header Body */
+
+.header-info {
+    margin-top: 25vh;
+    width: 40vw;
+}
+
+h1 {
+    margin-bottom: 3vh;
+    font-size: 2.5em;
+}
+
+.header-desc {
+    font-size: 1em;
+    color: rgba(231, 231, 231, 0.8);
+}
+
+
+/* --------------------------------------------- MAIN --------------------------------------------- */
+
+main {
+    padding-top: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 1vh;
+}
+
+.section-desc {
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8vh;
+}
+
+
+/* Portfolio */
+
+#portfolio {
+    height: auto
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    background-size: cover;
+    width: 28vw;
+    height: 55vh;
+    margin-block: 2vh;
+    border-radius: 5px;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+.portfolio-item:hover {
+    cursor: pointer;
+}
+
+.pi-info {
+    background: linear-gradient(180deg, rgba(164, 164, 164, 0.3) 0%, rgba(0,0,0,0.8) 100%);
+    padding-inline: 1.5vw;
+    padding-block: 2vh;
+    width: 100%;
+    height: 8vh;
+    overflow: hidden;
+    /* bg-color */
+    transition: width 1s, height 2s;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.pi-info:hover {
+    height: 20vh;
+    background-color: rgb(5,10,39)
+}
+
+.pi-title {
+    font-size: 0.7em;
+    margin-bottom: 1vh;
+}
+
+.pi-desc {
+    font-size: 0.6em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.les-vieilles-charettes {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/les-vieilles-charettes-preview.png");
+}
+
+.maison-levasseur {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/les-brunchs-de-clairette-preview.png");
+}
+
+.instant-gaming {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/instant-gaming-preview.png");
+}
+
+.musee {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/musee-du-petit-palais-preview.png");
+}
+
+.popchill {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/popchill-preview.png");
+}
+
+.trouvailles {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/les-trouvailles-de-thais-preview.png");
+}
+
+/* --------------------------------------------- FOOTER --------------------------------------------- */
+
+footer {
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 6vh;
+}
+
+.social-medias {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon-container {
+    margin-inline: 0.5vw;
+}
+
+.footer-hr {
+    width: 20px;
+    margin-inline: 0.5vw;
+}
+
+.footer-icon {
+    width: 3vw;
+}
+
+.footer-icon:hover {
+    cursor: pointer;
+}

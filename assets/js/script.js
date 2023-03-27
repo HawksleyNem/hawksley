@@ -32,6 +32,32 @@ Vue.component('portfolio-item',{
     },
 });
 
+Vue.component('section-title',{
+    template:`
+        <div class="section-upper">
+            <div class="section-title-deco">
+                <hr class="section-title-hr-left hr-small" />
+                <hr class="section-title-hr-left" />
+                <hr class="section-title-hr-left" />
+                <hr class="section-title-hr-left" />
+                <hr class="section-title-hr-left" />
+                <div class="section-title-square"></div>
+                <h2 class="section-title">{{ title }}</h2>
+                <div class="section-title-square"></div>
+                <hr class="section-title-hr-right" />
+                <hr class="section-title-hr-right" />
+                <hr class="section-title-hr-right" />
+                <hr class="section-title-hr-right" />
+                <hr class="section-title-hr-right hr-small" />
+            </div>
+            <div>
+                <p class="section-desc">{{ desc }}</p>
+            </div>
+        </div>
+    `,
+    props: ["title","desc"],
+});
+
 
 var app = new Vue({
     el: '#app'

@@ -104,7 +104,7 @@ h1 {
 
 .header-desc {
     font-size: 1em;
-    color: rgba(231, 231, 231, 0.8);
+    color: rgba(231, 231, 231, 1);
 }
 
 
@@ -117,14 +117,49 @@ main {
     align-items: center;
 }
 
+.section-upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title-deco {
+    display: flex;
+    align-items: center;
+}
+
+.section-title-square {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    rotate: 45deg;
+    margin-inline: 1vw;
+}
+
+.section-title-hr-left {
+    rotate: 90deg;
+    height: 1vh;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin-left: 1vw;
+}
+
+.section-title-hr-right {
+    rotate: 90deg;
+    height: 1vh;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin-right: 1vw;
+}
+
+.hr-small {
+    height: 0.2vh;
+}
+
 .section-title {
-    text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 1vh;
 }
 
 .section-desc {
-    text-align: center;
     font-size: 0.9em;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 8vh;

@@ -58,7 +58,7 @@ nav {
 
 nav a {
     margin-inline: 0.7vw;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 nav a:visited {
@@ -119,13 +119,13 @@ main {
 
 .section-title {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 1vh;
 }
 
 .section-desc {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 8vh;
 }
@@ -180,12 +180,12 @@ main {
 }
 
 .pi-title {
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-bottom: 1vh;
 }
 
 .pi-desc {
-    font-size: 0.6em;
+    font-size: 0.7em;
     color: rgba(255, 255, 255, 0.7);
 }
 

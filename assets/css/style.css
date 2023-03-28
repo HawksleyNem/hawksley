@@ -10,15 +10,41 @@
     src: url("../fonts/Manrope/Manrope-VariableFont_wght.ttf");
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(5,10,39);;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.5);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(85, 85, 85, 0.5);
+  }
+
 body {
     background-color: rgb(5,10,39);
     color: #ffffff;
     font-family: 'Manrope';
     font-weight: 500;
+    /* cursor: url("../img/klee_cursor.png"), auto; */
 }
 
 .container {
     width: 90%;
+}
+
+.background {
+    position: absolute;
 }
 
 
@@ -166,6 +192,53 @@ main {
 }
 
 
+/* Profile */
+
+#profile {
+    margin-bottom: 20vh;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 20vw;
+    border: 1px solid white;
+    border-radius: 1000px;
+}
+
+.profile-desc {
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1em;
+    margin-left: 6vw;
+    /* background-color: rgb(8, 17, 63);
+    border-radius: 10px;
+    padding: 3vw; */
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5vh;
+}
+
+.info-square {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    rotate: 45deg;
+    margin-right: 1vw;
+}
+
+.desc-highlight {
+    color: white;
+    font-weight: bold;
+}
+
+
 /* Portfolio */
 
 #portfolio {
@@ -215,7 +288,7 @@ main {
 }
 
 .pi-title {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-bottom: 1vh;
 }
 

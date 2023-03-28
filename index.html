@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>Hawksley Mouquet~</title>
     </head>
     <body>
@@ -46,26 +47,132 @@
             </header>
 
             <main>
-                <section class="container">
-                    <!-- <section id="profile">
-                <h2>Profil</h2>
-            </section>
+                <section class="container profile-container">
+                    <section id="profile">
+                        <section-title
+                            :title="'Profil'"
+                            :desc="'À propos de moi'"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        ></section-title>
 
-            <section id="skills">
-                <h2>Compétences</h2>
-            </section>
+                        <div class="profile-section">
+                            <img
+                                src="./assets/img/profile-pic.png"
+                                alt="Photo de profil"
+                                class="profile-pic"
+                                data-aos="fade-up"
+                                data-aos-duration="1500"
+                            />
+                            <div
+                                class="profile-info"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
+                                <div class="profile-desc">
+                                    <p>
+                                        Suite à l'obtention de mon baccalauréat,
+                                        j'ai décidé de m'orienter dans le
+                                        domaine de l'<span
+                                            class="desc-highlight"
+                                            >informatique</span
+                                        >. J'ai d'abord intégré un
+                                        <span class="desc-highlight"
+                                            >BUT Informatique</span
+                                        >
+                                        à l'IUT d'Amiens (80800) pendant un an,
+                                        mais cela ne m'a pas plu car il n'y
+                                        avait pas beaucoup de design. J'ai donc
+                                        par la suite intégré le
+                                        <span class="desc-highlight"
+                                            >Bachelor Web Design UI - UX &
+                                            Développement Web</span
+                                        >
+                                        à La Manu, école supérieure des métiers
+                                        du numérique, à Amiens, là où j'exerce à
+                                        la fois le développement
+                                        <span class="desc-highlight"
+                                            >Back-End</span
+                                        >,
+                                        <span class="desc-highlight"
+                                            >Front-End</span
+                                        >, ainsi que le
+                                        <span class="desc-highlight"
+                                            >Design</span
+                                        >.
+                                    </p>
+                                    <div class="info-item">
+                                        <div class="info-square"></div>
+                                        <p class="info">
+                                            <span class="desc-highlight"
+                                                >Nom</span
+                                            >
+                                            - Mouquet
+                                        </p>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="info-square"></div>
+                                        <p class="info">
+                                            <span class="desc-highlight"
+                                                >Prénom</span
+                                            >
+                                            - Hawksley
+                                        </p>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="info-square"></div>
+                                        <p class="info">
+                                            <span class="desc-highlight"
+                                                >Âge</span
+                                            >
+                                            - 19 ans
+                                        </p>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="info-square"></div>
+                                        <p class="info">
+                                            <span class="desc-highlight"
+                                                >Ville</span
+                                            >
+                                            - Villers-Bretonneux
+                                        </p>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="info-square"></div>
+                                        <p class="info">
+                                            <span class="desc-highlight"
+                                                >Hobbies</span
+                                            >
+                                            - Jeux-vidéo, animes, mangas, anime
+                                            artworks
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-            <section id="career-path">
-                <h2>Parcours</h2>
-            </section> -->
+                    <!-- <section id="skills">
+                        <h2>Compétences</h2>
+                    </section>
+
+                    <section id="career-path">
+                        <h2>Parcours</h2>
+                    </section> -->
 
                     <section id="portfolio">
                         <section-title
                             :title="'Portfolio'"
                             :desc="'Retrouvez ci-dessous mes créations'"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
                         ></section-title>
 
-                        <div class="portfolio-grid">
+                        <div
+                            class="portfolio-grid"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <portfolio-item
                                 class="les-vieilles-charettes"
                                 :pi_title="'Les Vieilles Charettes'"
@@ -135,4 +242,9 @@
     </body>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>

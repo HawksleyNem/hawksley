@@ -299,26 +299,32 @@ main {
 
 .les-vieilles-charettes {
     background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/les-vieilles-charettes-preview.png");
+    background-size: cover;
 }
 
 .maison-levasseur {
     background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/les-brunchs-de-clairette-preview.png");
+    background-size: cover;
 }
 
 .instant-gaming {
     background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/instant-gaming-preview.png");
+    background-size: cover;
 }
 
 .musee {
     background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/musee-du-petit-palais-preview.png");
+    background-size: cover;
 }
 
 .popchill {
     background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/popchill-preview.png");
+    background-size: cover;
 }
 
 .trouvailles {
     background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/les-trouvailles-de-thais-preview.png");
+    background-size: cover;
 }
 
 /* --------------------------------------------- FOOTER --------------------------------------------- */

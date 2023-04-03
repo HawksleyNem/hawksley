@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -62,7 +62,7 @@
                                 alt="Photo de profil"
                                 class="profile-pic"
                                 data-aos="fade-up"
-                                data-aos-duration="1500"
+                                data-aos-duration="1200"
                             />
                             <div
                                 class="profile-info"
@@ -143,8 +143,8 @@
                                             <span class="desc-highlight"
                                                 >Hobbies</span
                                             >
-                                            - Jeux-vidéo, animes, mangas, anime
-                                            artworks
+                                            - Animes, anime artworks, mangas,
+                                            jeux-vidéo
                                         </p>
                                     </div>
                                 </div>
@@ -152,11 +152,115 @@
                         </div>
                     </section>
 
-                    <!-- <section id="skills">
-                        <h2>Compétences</h2>
+                    <section id="skills">
+                        <section-title
+                            :title="'Compétences'"
+                            :desc="'Domaines travaillés'"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        ></section-title>
+
+                        <div class="skills-section">
+                            <div
+                                class="skills-grid"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
+                                <div class="skills-item">
+                                    <si-title :title="'Front-End'"></si-title>
+                                    <div class="si-skills">
+                                        <img
+                                            src="./assets/img/html-5.png"
+                                            alt="HTML5"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
+                                            src="./assets/img/css-3.png"
+                                            alt="CSS3"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
+                                            src="./assets/img/js.png"
+                                            alt="JavaScript"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
+                                            src="./assets/img/vue-9-logo-svgrepo-com.png"
+                                            alt="VueJS"
+                                            class="si-skills-icon"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="skills-item">
+                                    <si-title :title="'Back-End'"></si-title>
+                                    <div class="si-skills">
+                                        <img
+                                            src="./assets/img/python.png"
+                                            alt="Python"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
+                                            src="./assets/img/php.png"
+                                            alt="PHP"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
+                                            src="./assets/img/wordpress.png"
+                                            alt="Wordpress"
+                                            class="si-skills-icon"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="skills-item">
+                                    <si-title :title="'Design'"></si-title>
+                                    <div class="si-skills">
+                                        <img
+                                            src="./assets/img/xd.png"
+                                            alt="AdobeXD"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
+                                            src="./assets/img/photoshop.png"
+                                            alt="Photoshop"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
+                                            src="./assets/img/illustrateur.png"
+                                            alt="Illustrator"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
+                                            src="./assets/img/indesign.png"
+                                            alt="InDesign"
+                                            class="si-skills-icon"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="skills-item">
+                                    <si-title :title="'Divers'"></si-title>
+                                    <div class="si-skills">
+                                        <img
+                                            src="./assets/img/premiere-pro.png"
+                                            alt="Premiere Pro"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
+                                            src="./assets/img/trello.png"
+                                            alt="Trello"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
+                                            src="./assets/img/github.png"
+                                            alt="Github"
+                                            class="si-skills-icon"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
-                    <section id="career-path">
+                    <!-- <section id="career-path">
                         <h2>Parcours</h2>
                     </section> -->
 

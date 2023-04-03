@@ -195,7 +195,7 @@ main {
 /* Profile */
 
 #profile {
-    margin-bottom: 20vh;
+    margin-bottom: 18vh;
 }
 
 .profile-section {
@@ -237,6 +237,49 @@ main {
     color: white;
     font-weight: bold;
 }
+
+
+/* Skills */
+
+#skills {
+    margin-bottom: 18vh;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5vw;
+    width: 36.5vw;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-bottom: 5vh;
+}
+
+.si-title-deco {
+    font-size: 1.2em;
+    margin-bottom: 6vh;
+    display: flex;
+    align-items: center;
+}
+
+.si-skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.si-skills-icon {
+    width: 5vw;
+}
+
 
 
 /* Portfolio */

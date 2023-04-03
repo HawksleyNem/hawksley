@@ -58,6 +58,17 @@ Vue.component('section-title',{
     props: ["title","desc"],
 });
 
+Vue.component('si-title',{
+    template:`
+        <div class="si-title-deco">
+            <div class="section-title-square"></div>
+            <h3>{{ title }}</h3>
+            <div class="section-title-square"></div>
+        </div>
+    `,
+    props: ["title"],
+});
+
 
 var app = new Vue({
     el: '#app'

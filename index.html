@@ -10,29 +10,26 @@
     </head>
     <body>
         <section id="app">
+            <nav>
+                <div class="nav-small nav-contact"></div>
+                <div class="nav-sections">
+                    <a href="#home" class="enabled">Accueil</a>
+                    <a href="#profile" class="enabled">Profil</a>
+                    <a href="#skills" class="enabled">Compétences</a>
+                    <a href="#career-path" class="enabled">Parcours</a>
+                    <a href="#portfolio" class="enabled">Portfolio</a>
+                </div>
+                <div class="nav-small nav-button">
+                    <a
+                        href="./assets/img/CV Hawksley Mouquet.png"
+                        download="CV Hawksley Mouquet.png"
+                        class="dl-button"
+                        >Télécharger CV
+                    </a>
+                </div>
+            </nav>
             <header id="home">
                 <section class="container">
-                    <nav>
-                        <div class="nav-small">
-                            <a href="" class="nav-item"
-                                ><img src="" alt=""
-                            /></a>
-                        </div>
-                        <div class="nav-sections">
-                            <a href="#home" class="enabled">Accueil</a>
-                            <a href="#profile" class="disabled">Profil</a>
-                            <a href="#skills" class="disabled">Compétences</a>
-                            <a href="#career-path" class="disabled">Parcours</a>
-                            <a href="#portfolio" class="disabled">Portfolio</a>
-                        </div>
-                        <div class="nav-small nav-button">
-                            <a href="">
-                                <button class="dl-button">
-                                    Télécharger CV
-                                </button>
-                            </a>
-                        </div>
-                    </nav>
                     <div class="header-body">
                         <div class="header-info">
                             <h1>Hawksley Mouquet</h1>
@@ -205,6 +202,11 @@
                                             class="si-skills-icon"
                                         />
                                         <img
+                                            src="./assets/img/mysql-logo-svgrepo-com.png"
+                                            alt="MySQL"
+                                            class="si-skills-icon"
+                                        />
+                                        <img
                                             src="./assets/img/wordpress.png"
                                             alt="Wordpress"
                                             class="si-skills-icon"
@@ -214,6 +216,11 @@
                                 <div class="skills-item">
                                     <si-title :title="'Design'"></si-title>
                                     <div class="si-skills">
+                                        <img
+                                            src="./assets/img/figma.png"
+                                            alt="Figma"
+                                            class="si-skills-icon"
+                                        />
                                         <img
                                             src="./assets/img/xd.png"
                                             alt="AdobeXD"
@@ -260,9 +267,180 @@
                         </div>
                     </section>
 
-                    <!-- <section id="career-path">
-                        <h2>Parcours</h2>
-                    </section> -->
+                    <section id="career-path">
+                        <section-title
+                            :title="'Parcours'"
+                            :desc="'Retrouvez ci-dessous mon parcours'"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        ></section-title>
+                        <div class="cp-grid cp-item-left">
+                            <!-- La Manu -->
+                            <div class="cp-item">
+                                <div
+                                    data-aos="fade-right"
+                                    data-aos-duration="1500"
+                                    class="cp-info"
+                                >
+                                    <h2 class="cp-item-title">
+                                        Bachelor Web Design & Developpement
+                                        (Première année)
+                                    </h2>
+                                    <h3 class="cp-item-place">
+                                        La Manu, Amiens (80)
+                                    </h3>
+                                    <hr class="cp-hr" />
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Bases du développement web et cours
+                                            avancés (HTML, CSS, Javascript,
+                                            VueJS, Bootstrap)
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Bases du développement back-end et
+                                            Gestion de bases de données (Python,
+                                            PHP & MySQL)
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Découverte de Wordpress, utilisation
+                                            de plugins et de builders
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>Design UI / UX (AdobeXD & Figma)</p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>Introduction à Github</p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Développement de la communication et
+                                            de l'expression orale
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>Marketing digital</p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Introduction à la Publication
+                                            Assitée par Ordinateur (Photoshop,
+                                            Illustrator, InDesign)
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Approfondissement de l'expression
+                                            orale et des connaissances en langue
+                                            anglaise
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000"
+                                    class="cp-item-date-container"
+                                >
+                                    <div class="section-title-square"></div>
+                                    <p class="cp-item-date">
+                                        Octobre 2022 à <br />Juin 2023
+                                    </p>
+                                    <div class="section-title-square"></div>
+                                </div>
+                            </div>
+                            <!-- IUT d'Amiens -->
+                            <div class="cp-item">
+                                <div
+                                    data-aos="fade-right"
+                                    data-aos-duration="1500"
+                                    class="cp-info"
+                                >
+                                    <h2 class="cp-item-title">
+                                        BUT Informatique (Première année)
+                                    </h2>
+                                    <h3 class="cp-item-place">
+                                        IUT d'Amiens (80)
+                                    </h3>
+                                    <hr class="cp-hr" />
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Bases du développement web (HTML,
+                                            CSS, Bootstrap)
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Bases du développement back-end et
+                                            Gestion de bases de données (C, C#,
+                                            C++, MySQL, Oracle)
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Initiation aux systèmes
+                                            d'exploitation (Windows, Linux)
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>Introduction à Github</p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Développement de la communication et
+                                            de l'expression orale
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Réalisation d'Interfaces
+                                            Homme-Machine
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>
+                                            Introduction à l'architecture des
+                                            machines
+                                        </p>
+                                    </div>
+                                    <div class="cp-item-point">
+                                        <div class="section-title-square"></div>
+                                        <p>Projet Professionnel Personnel</p>
+                                    </div>
+                                </div>
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000"
+                                    class="cp-item-date-container"
+                                >
+                                    <div class="section-title-square"></div>
+                                    <p class="cp-item-date">
+                                        Septembre 2021 à <br />Juillet 2022
+                                    </p>
+                                    <div class="section-title-square"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
                     <section id="portfolio">
                         <section-title
@@ -307,38 +485,59 @@
                                 :pi_title="'Les Trouvailles de Thaïs'"
                                 :pi_desc="`Les Trouvailles de Thaïs est le nom du site que nous avons réalisé pour une vraie cliente qui tient sa boutique à Amiens. C'est un projet de groupe qui a duré 3 mois, avec adaptation de la charte graphique pour le web, la conception du wireframe, de la maquette, et enfin du site Wordpress, avec la gestion des plugins nécessaires aux besoins de la cliente.`"
                             ></portfolio-item>
+                            <portfolio-item
+                                class="fluxml"
+                                :pi_title="'FluXML'"
+                                :pi_desc="`FluXML est le nom que nous avons donné à notre projet de découverte du XML. Nous avions pour objectif de réaliser un site d'informations, regroupant plusieurs catégories, dynamique à l'aide de PHP, JS et XML. Ce projet de groupe à duré une semaine.`"
+                            ></portfolio-item>
                         </div>
                     </section>
                 </section>
             </main>
 
             <footer>
-                <section class="container">
-                    <section class="social-medias">
-                        <hr class="footer-hr" />
-                        <a
-                            href="https://github.com/HawksleyNem"
-                            target="_blank"
-                            class="footer-icon-container"
-                        >
+                <section class="container container-footer">
+                    <section class="contact">
+                        <div class="social-medias">
+                            <hr class="footer-hr" />
+                            <a
+                                href="https://github.com/HawksleyNem"
+                                target="_blank"
+                                class="footer-icon-container"
+                            >
+                                <img
+                                    src="./assets/img/github.png"
+                                    alt="Github"
+                                    class="footer-icon"
+                                />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/hawksley-mouquet-254566235/"
+                                target="_blank"
+                                class="footer-icon-container"
+                            >
+                                <img
+                                    src="./assets/img/linkedin.png"
+                                    alt="LinkedIn"
+                                    class="footer-icon"
+                                />
+                            </a>
+                            <hr class="footer-hr" />
+                        </div>
+                        <div class="contact-info">
                             <img
-                                src="./assets/img/github.png"
-                                alt="Github"
-                                class="footer-icon"
+                                src="./assets/img/phone.png"
+                                alt="Téléphone"
+                                class="footer-contact-icon"
                             />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/hawksley-mouquet-254566235/"
-                            target="_blank"
-                            class="footer-icon-container"
-                        >
+                            <p>07 62 97 37 25</p>
                             <img
-                                src="./assets/img/linkedin.png"
-                                alt="LinkedIn"
-                                class="footer-icon"
+                                src="./assets/img/mail.png"
+                                alt="Mail"
+                                class="footer-contact-icon"
                             />
-                        </a>
-                        <hr class="footer-hr" />
+                            <p>hawksley.mqt@gmail.com</p>
+                        </div>
                     </section>
                 </section>
             </footer>

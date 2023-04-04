@@ -28,6 +28,9 @@ Vue.component('portfolio-item',{
             else if (this.pi_title == 'Les Trouvailles de Thaïs') {
                 window.open('https://les-trouvailles-de-thais.les-vielles-charrettes-tm.fr/', '_blank');
             }
+            else if (this.pi_title == 'FluXML') {
+                window.open('https://hector-deal.alwaysdata.net/XML-Projet/', '_blank')
+            }
         },
     },
 });
@@ -69,7 +72,16 @@ Vue.component('si-title',{
     props: ["title"],
 });
 
+var nv = new Vue ({
+    el:'#app'
+})
 
-var app = new Vue({
-    el: '#app'
-});
+
+var win = window,
+docEl = document.documentElement,
+$nav = document.querySelector('nav');
+
+win.onscroll = function(){
+    var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
+    $nav.style.backgroundColor =  sTop > 500 ? "rgba(0, 0, 0, 1)":"rgba(0, 0, 0, 0)" ;
+ };

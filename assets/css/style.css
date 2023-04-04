@@ -17,7 +17,7 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: rgb(5,10,39);;
+    background: rgb(5,10,39);
   }
   
   /* Handle */
@@ -50,23 +50,18 @@ body {
 
 /* --------------------------------------------- HEADER --------------------------------------------- */
 
-header {
-    height: 100vh;
-    padding-top: 4vh;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(5,10,39,1) 100%), url("../img/1123013.jpg");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
-
-
 /* Nav */
 
 nav {
+    height: 11vh;
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s;
+    background-color: none;
+    z-index: 99;
 }
 
 .nav-small {
@@ -102,13 +97,15 @@ nav a.disabled {
 .dl-button {
     cursor: pointer;
     background-color: rgb(52,149,73);
-    border-style: none;
-    padding-inline: 1.5vw;
-    padding-block: 2.5vh;
+    padding-inline: 1.3vw;
+    padding-block: 1.8vh;
+    margin-left: 0;
+    margin-right: 5vw;
     border-radius: 5px;
     color: #ffffff;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 0.9em;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); 
 }
 
 .dl-button:hover {
@@ -118,8 +115,19 @@ nav a.disabled {
 
 /* Header Body */
 
+#home {
+    height: 100vh;
+    padding-top: 4vh;
+    background: linear-gradient(180deg, rgba(5,10,39,0.3) 60%, rgba(5,10,39,1) 100%), url("../img/1161890.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+} 
+
 .header-info {
-    margin-top: 25vh;
+    margin-top: 35vh;
     width: 40vw;
 }
 
@@ -259,6 +267,7 @@ main {
     width: 36.5vw;
     height: auto;
     background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); 
     border-radius: 5px;
     margin-bottom: 5vh;
 }
@@ -280,6 +289,63 @@ main {
     width: 5vw;
 }
 
+
+/* Parcours */
+
+#career-path {
+    margin-bottom: 18vh;
+}
+
+.cp-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cp-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cp-info {
+    width: 52vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+    padding: 4vw;
+    margin-bottom: 5vh;
+}
+
+.cp-item-place {
+    font-weight: 300;
+}
+
+.cp-hr {
+    width: 10vw;
+    margin-top: 1.5vh;
+    margin-bottom: 5vh;
+}
+
+.cp-item-point {
+    display: flex;
+    align-items: center;
+    margin-left: -1vw;
+    margin-bottom: 1vh;
+}
+
+.cp-item-date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cp-item-date {
+    width: 25vw;
+    height: auto;
+    text-align: center;
+    margin-block: 3vh;
+}
 
 
 /* Portfolio */
@@ -303,14 +369,17 @@ main {
     display: flex;
     align-items: end;
     justify-content: start;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
 }
 
 .portfolio-item:hover {
     cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(52,149,73,0.8); 
 }
 
 .pi-info {
-    background: linear-gradient(180deg, rgba(164, 164, 164, 0.3) 0%, rgba(0,0,0,0.8) 100%);
+    background: rgba(0, 0, 0, 0.4);
     padding-inline: 1.5vw;
     padding-block: 2vh;
     width: 100%;
@@ -323,11 +392,12 @@ main {
     -o-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
     transition: 0.5s;
+    border-radius: 0 0 5px 5px; 
 }
 
 .pi-info:hover {
     height: 20vh;
-    background-color: rgb(5,10,39)
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .pi-title {
@@ -370,14 +440,26 @@ main {
     background-size: cover;
 }
 
+.fluxml {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url("../img/fluxml-preview.png");
+    background-size: cover;
+}
+
 /* --------------------------------------------- FOOTER --------------------------------------------- */
 
 footer {
-    height: 15vh;
+    height: 16vh;
     background-color: black;
     display: flex;
     justify-content: center;
     margin-top: 6vh;
+    padding-bottom: 5vh;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .social-medias {
@@ -385,6 +467,18 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info p {
+    margin-left: 0.8vw;
+    margin-right: 3vw;
+
 }
 
 .footer-icon-container {
@@ -402,4 +496,8 @@ footer {
 
 .footer-icon:hover {
     cursor: pointer;
+}
+
+.footer-contact-icon {
+    height: 2.5vh;
 }

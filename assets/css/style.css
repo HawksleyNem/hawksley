@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -82,12 +83,13 @@ nav a {
     font-size: 0.9em;
 }
 
-nav a:visited {
-    color: #ffffff;
-}
-
 nav a.enabled {
     color: #ffffff;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #bababa;
 }
 
 nav a.disabled {

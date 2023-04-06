@@ -15,9 +15,10 @@
                 <div class="nav-sections">
                     <a href="#home" class="enabled">Accueil</a>
                     <a href="#profile" class="enabled">Profil</a>
-                    <a href="#skills" class="enabled">Compétences</a>
-                    <a href="#career-path" class="enabled">Parcours</a>
-                    <a href="#portfolio" class="enabled">Portfolio</a>
+                    <a href="#skills-redirect" class="enabled">Compétences</a>
+                    <a href="#career-path-redirect" class="enabled">Parcours</a>
+                    <a href="#portfolio-redirect" class="enabled">Portfolio</a>
+                    <a href="#contact" class="enabled">Contact</a>
                 </div>
                 <div class="nav-small nav-button">
                     <a
@@ -136,7 +137,7 @@
                                     </div>
                                     <div class="info-item">
                                         <div class="info-square"></div>
-                                        <p class="info">
+                                        <p class="info" id="skills-redirect">
                                             <span class="desc-highlight"
                                                 >Hobbies</span
                                             >
@@ -260,6 +261,7 @@
                                             src="./assets/img/github.png"
                                             alt="Github"
                                             class="si-skills-icon"
+                                            id="career-path-redirect"
                                         />
                                     </div>
                                 </div>
@@ -424,7 +426,9 @@
                                     </div>
                                     <div class="cp-item-point">
                                         <div class="section-title-square"></div>
-                                        <p>Projet Professionnel Personnel</p>
+                                        <p id="portfolio-redirect">
+                                            Projet Professionnel Personnel
+                                        </p>
                                     </div>
                                 </div>
                                 <div
@@ -495,7 +499,7 @@
                 </section>
             </main>
 
-            <footer>
+            <footer id="contact">
                 <section class="container container-footer">
                     <section class="contact">
                         <div class="social-medias">

@@ -18,7 +18,7 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: rgb(5,10,39);
+    background: rgba(136, 136, 136, 0.2);
   }
   
   /* Handle */
@@ -46,10 +46,6 @@ body {
 
 .background {
     position: absolute;
-}
-
-.comming-soon {
-    display: none;
 }
 
 
@@ -169,8 +165,8 @@ main {
 }
 
 .section-title-square {
-    width: 6px;
-    height: 6px;
+    min-width: 6px;
+    min-height: 6px;
     background-color: rgba(255, 255, 255, 0.7);
     rotate: 45deg;
     margin-inline: 1vw;
@@ -209,7 +205,7 @@ main {
 /* Profile */
 
 #profile {
-    margin-bottom: 18vh;
+    margin-bottom: 13vh;
 }
 
 .profile-section {
@@ -256,7 +252,7 @@ main {
 /* Skills */
 
 #skills {
-    margin-bottom: 18vh;
+    margin-bottom: 13vh;
 }
 
 .skills-grid {
@@ -299,7 +295,7 @@ main {
 /* Parcours */
 
 #career-path {
-    margin-bottom: 18vh;
+    margin-bottom: 13vh;
 }
 
 .cp-grid {
@@ -357,7 +353,7 @@ main {
 /* Portfolio */
 
 #portfolio {
-    height: auto
+    margin-bottom: 13vh;
 }
 
 .portfolio-grid {
@@ -451,15 +447,46 @@ main {
     background-size: cover;
 }
 
+
+/* Contact */
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    width: 25vw;
+    padding: 4vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    margin-inline: 1vw;
+}
+
+.contact-icon {
+    height: 13vh;
+    margin-bottom: 4vh;
+}
+
+#contact p {
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+
 /* --------------------------------------------- FOOTER --------------------------------------------- */
 
 footer {
-    height: 16vh;
     background-color: black;
     display: flex;
     justify-content: center;
     margin-top: 6vh;
-    padding-bottom: 5vh;
+    padding-block: 4vh;
 }
 
 .container-footer {
@@ -469,10 +496,10 @@ footer {
 }
 
 .social-medias {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2vh;
 }
 
 .contact-info {
@@ -509,43 +536,9 @@ footer {
     height: 2.5vh;
 }
 
-
-/* Media queries */
-
-@media screen and (max-width: 640px) {
-
-    .comming-soon {
-        display: block;
-        margin-top: 8vh;
-        text-align: center;
-        font-size: 1.2em;
-    }
-
-    nav {
-        display: none;
-    }
-
-    #home {
-        display: none;
-    }
-
-    #profile {
-        display: none;
-    }
-
-    #skills {
-        display: none;
-    }
-
-    #career-path {
-        display: none;
-    }
-
-    #portfolio {
-        display: none;
-    }
-
-    footer {
-        display: none;
-    }
+.mentions-item {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-block: 1vh;
 }

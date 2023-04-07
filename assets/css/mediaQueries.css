@@ -1,0 +1,172 @@
+@media screen and (max-width: 640px) {
+    /* Nav */
+
+    nav a {
+        display: none;
+    }
+
+    .burger-menu {
+        margin-left: 5%;
+    }
+
+    .burger-bar {
+        width: 6vw;
+        height: 0.4vh;
+        background-color: #ffffff;
+    }
+
+    .middle-bar {
+        margin-block: 1vh;
+    }
+
+
+    /* Hr title */
+
+    .section-title-hr-left {
+        margin-left: 2.5vw;
+    }
+
+    .section-title-hr-right {
+        margin-right: 2.5vw;
+    }
+
+    .section-title-square {
+        margin-inline: 2.5vw;
+    }
+
+
+    /* Header */
+
+    #home {
+        justify-content: center;
+    }
+
+    .header-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-info {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+
+    /* Profile */
+
+    .profile-section {
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        width: 35vw;
+        margin-bottom: 6vh;
+    }
+
+    .profile-desc {
+        margin: 0;
+    }
+
+    .info {
+        margin-left: 1vw;
+    }
+
+
+    /* Skills */
+
+    .skills-item {
+        width: 85vw;
+    }
+
+    .si-skills-icon {
+        width: 12vw;
+    }
+
+
+    /* Career path */
+
+    .cp-item {
+        flex-direction: column-reverse;
+    }
+
+    .cp-info {
+        width: 78vw;
+        padding: 6vw;
+    }
+
+    .cp-info p {
+        margin-left: 2vw;
+    }
+
+    .cp-item-date {
+        width: 37vw;
+    }
+
+    .cp-item-date-container {
+        flex-direction: row;
+        margin-bottom: 2vh;
+    }
+
+
+    /* Portfolio */
+
+    .portfolio-grid {
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .pi-info {
+        height: auto;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 3.5vw;
+    }
+
+    .pi-info:hover {
+        height: auto;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .pi-title {
+        font-size: 1.2em;
+    }
+
+    .pi-desc {
+        font-size: 0.9em;
+    }
+
+
+    /* Contact */
+
+    .contact-container {
+        width: 40vw;
+    }
+
+    #contact p {
+        font-size: 1em;
+    }
+    
+    .break {
+        word-break: break-all;
+    }
+
+
+    /* Footer */
+
+    .footer-icon-container {
+        margin-inline: 1vw;
+    }
+
+    .footer-icon {
+        width: 10vw;
+    }
+
+    .footer-hr {
+        margin-inline: 1vw;
+    }
+
+}

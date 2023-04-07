@@ -48,6 +48,10 @@ body {
     position: absolute;
 }
 
+.comming-soon {
+    display: none;
+}
+
 
 /* --------------------------------------------- HEADER --------------------------------------------- */
 
@@ -503,4 +507,45 @@ footer {
 
 .footer-contact-icon {
     height: 2.5vh;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 640px) {
+
+    .comming-soon {
+        display: block;
+        margin-top: 8vh;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #home {
+        display: none;
+    }
+
+    #profile {
+        display: none;
+    }
+
+    #skills {
+        display: none;
+    }
+
+    #career-path {
+        display: none;
+    }
+
+    #portfolio {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
 }

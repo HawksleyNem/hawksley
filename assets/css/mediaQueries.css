@@ -1,8 +1,26 @@
 @media screen and (max-width: 640px) {
     /* Nav */
 
-    nav a {
+    .nav-contact {
         display: none;
+    }
+
+    nav a.enabled {
+        display: none;
+    }
+
+    nav a.disabled {
+        display: none;
+    }
+
+    .nav-small {
+        width: auto;
+        margin-right: 6vw;
+    }
+
+    .nav-button {
+        display: block;
+        text-align: unset;
     }
 
     .burger-menu {

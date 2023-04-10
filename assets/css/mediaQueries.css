@@ -5,22 +5,22 @@
         display: none;
     }
 
-    nav a.enabled {
-        display: none;
-    }
-
-    nav a.disabled {
+    .nav-sections {
         display: none;
     }
 
     .nav-small {
         width: auto;
-        margin-right: 6vw;
+        margin-left: 6vw;
     }
 
     .nav-button {
         display: block;
         text-align: unset;
+    }
+
+    .dl-button {
+        margin: 0;
     }
 
     .burger-menu {
